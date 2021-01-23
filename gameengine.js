@@ -24,6 +24,7 @@ class GameEngine {
         var that = this;
         (function gameLoop() {
             that.loop();
+
             requestAnimFrame(gameLoop, that.ctx.canvas);
         })();
     };
